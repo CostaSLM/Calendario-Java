@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.calendar {
+  padding-block: 15px;
+  width: 400px;
+  padding-top: 32.91px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.weekdays {
+  display: flex;
+}
+
+.weekdays div {
+  flex: 1;
+  text-align: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+}
+
+.days div {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.days .day-22:hover {
+  background-color: #f0f0f0;
+}
+.days .day-23:hover {
+  background-color: #f0f0f0;
+}
+main {
+  background-color: #ffffff;
+  display: flex;
+  height: 750px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0 #b5b5b5;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f5f5;
+}
+.left-container {
+  width: 400px;
+  border-right: 1px solid #e5e7eb;
+  height: 100%;
+  padding: 30px;
+}
+
+.location {
+  margin-top: 40px;
+}
+.content-calendar {
+  width: 797.91px;
+  padding-top: 36px;
+  padding-inline: 25px;
+}
+
+.titulo-date {
+  font-family: Roboto;
+  font-size: 21.5px;
+  font-weight: 800;
+  line-height: 21.5px;
+  text-align: left;
+  padding-top: 35.24px;
+}
+.current-day {
+  position: relative;
+}
+
+.current-day::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #d7e164;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 35px;
+  position: absolute;
+}
+
+.days .day-22 {
+  background-color: #d7e164;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.days .day-23 {
+  background-color: #d7e164;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-mark {
+  width: 300px;
+  height: 500px;
+  padding: 16px 0px 0px 0px;
+}
+
+.btn {
+  padding-top: 16.49px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 268px;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid #d7e163;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  color: #d7e163;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.prev-next img {
+  cursor: pointer;
+}
+.prev-next img:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+}
+
+.duration {
+  margin-top: 16px;
+}
+.dropdown {
+  margin-top: 8px;
+}
+
+.escondido {
+  display: none;
+}

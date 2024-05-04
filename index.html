@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário de Reuniões</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./select-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="left-container">
+        <div id="book-court">
+          <h1>Book a Court</h1>
+          <p class="location">Location</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Pick a Country" readonly />
+            <ul class="options">
+              <li class="option">Singapore</li>
+              <li class="option">Brazil</li>
+            </ul>
+          </div>
+          <p class="duration">Duration</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Pick a Time" readonly />
+            <ul id="opcao" class="options">
+              <li class="option" value="30">30 minutes</li>
+              <li class="option" value="60">60 minutes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="content-calendar">
+        <h1 class="titulo-date">Pick date and time</h1>
+        <div class="content-flex">
+          <div class="calendar">
+            <div class="header">
+              <h4 id="monthYear"></h4>
+              <div class="prev-next">
+                <img
+                  src="./img/Button - Previous month.svg"
+                  alt="prev"
+                  id="prev"
+                  onclick="prevMonth()"
+                />
+                <img
+                  src="./img/Button - Next month.svg"
+                  alt="next"
+                  id="next"
+                  onclick="nextMonth()"
+                />
+              </div>
+            </div>
+            <div class="weekdays">
+              <div class="weekday">Su</div>
+              <div class="weekday">Mo</div>
+              <div class="weekday">Tu</div>
+              <div class="weekday">We</div>
+              <div class="weekday">Th</div>
+              <div class="weekday">Fr</div>
+              <div class="weekday">Sa</div>
+            </div>
+            <div class="days" id="days"></div>
+          </div>
+          <div class="content-mark">
+            <div class="selected-date"></div>
+            <div id="button-container">
+              <!-- Aqui os botões serão adicionados -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+      <script src="select-script.js"></script>
+    </main>
+  </body>
+</html>
